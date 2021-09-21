@@ -29,18 +29,20 @@ During the Project, the following tasks were performed :
 - Majority of the ratings given were positive.
 - Most of the sentiments scores calculated were between 0.10 to 0.50, indicating above average to positive sentiments conveyed through reviews.
 - On mapping sentiment scores with ratings using boxplots and distribution plots, we could see a lot of overlapping of distributions for several ratings like 1 and 2 & 4 and 5.
-- It was concluded that differentiating between reviews on a 5-scale rating was difficult. Hence, a 3 scale review sentiment category was built, were sentiments for review would be classified as positive, negative or neutral.
+- A 3-scale review sentiment category was built, were sentiments for review would be classified as positive, negative or neutral.
+- The proporition of reviews types is fairly balanced.
 
 **Model Building**
 - Data was split into train and test
 - Count Vectorizer and TF-idf vectorizers were used to transform the reviews into numerical format for models to process.
-- Logistic regression and naive bayes models were used.
-- Macro F1 along with cross validation scores was looked at during initial model comparison due to understand model performance and stability.
-- Logistic regression created using count vectorized train sample was giving the best results with f1 macro score of 0.78 macro f1 score on test.
-- Further hyperparameter tuning of count vectorizer parameters like ngrams, min-df, etc was done using a customer grid search to improve macro recall scores as our target is not identify as many negative reviews as possible.
-- Logistic regression using tuned count vectorizer improve recall score of negative reviews from 0.63 to 0.64
-- Final tuned model gave a macro f1 score of 0.79 and macro recall score of 0.83.
-- Deviation in recall macro scores during cross validation was only 0.2%, indicating a very stable model.
+- Logistic regression, naive bayes, decision tree and random forest models were used.
+- Recall was considered the most important metric as we wanted hotel to be able to identify as many negative reviews as possible so that they could identify all possiible issues with the hotels that could lead to negative reviews.
+- Macro Recall was used (due to multiclass) along with cross validation scores was looked at during initial model comparison due to understand model performance and stability.
+- Logistic regression created using count vectorized train sample was giving the best results with recall macro score of 0.77 macro f1 score on test and similar score during cross validation.
+- Further hyperparameter tuning of count vectorizer parameters like ngrams, min-df, etc was done using a customer grid search to improve macro recall scores.
+- Logistic regression using tuned count vectorizer improve recall score of negative reviews from 0.73 to 0.74
+- Final tuned model gave a macro recall score of 0.80, more than baseline model with 0.78.
+- Deviation in recall macro scores during cross validation reduced from 0.22% to 0.18%, indicating a very stable model.
 
 **Review Analysis**
 - Reviews were seperated based on their category i.e positive , negative or neutral and reviews within each category were analyized.
