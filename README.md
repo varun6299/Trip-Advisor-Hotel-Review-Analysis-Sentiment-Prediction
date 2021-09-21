@@ -5,7 +5,7 @@ A NLP cum Machine Learning Project which involves building a predictive Classifi
 Trip Advisor is a platform where millions of travellers post reviews for hotels that they stay in. Trip Advisor is one of the go-to platforms for travellers to decide which hotel to stay at based on comparison of hotels using ratings and reviews. The higher the ratings and more positive the reviews, the better the chance of a hotel being at the top of the recommendations for the viewer and being selected. However, lack of positive interviews or lower ratings could push the hotel down in the search results or prove unfavourable to its chances of being selected.
 
 ### **Approach**: 
-To create a classification model to predict the overall rating or sentiment of the reviews. Also, based on the analysis of different types of reviews i,e positive, negative, etc, identify the factors related to the hotel that could have an impact on the satisfaction of its customers, which could in turn affect the ratings and reviews given.
+To create a classification model to predict the overall sentiment conveyed through the reviews i.e Positive, negative or neutral. Also, based on the analysis of different types of reviews i,e positive, negative, etc, identify the factors related to the hotel that could have an impact on the satisfaction of its customers, which could in turn affect the ratings and reviews given.
 
 ### **Dataset**: 
 To solve the following business problem, the dataset has been downloaded from Kaggle. It was updated by Larxel. To view and download the dataset, click the link - https://www.kaggle.com/andrewmvd/trip-advisor-hotel-reviews
