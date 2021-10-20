@@ -46,7 +46,7 @@ During the Project, the following tasks were performed :
 
 **Review Analysis**
 - Reviews were seperated based on their category i.e positive , negative or neutral and reviews within each category were analyized.
-- Use of Parts of Speech tagging and Named entity recognition were used to find only the adjective and nouns related to the hotel.
+- Use of Parts of Speech tagging was made to find nouns related to the hotel.
 - Within negative reviews, people had commonly criticized room aspects such as cleanniness, water, bathroom or floor 
 - Many had also mentioned about the customer service and staff.
 - Within positive reviews, many had mentioned about the food, location, friendly staff and aspects of room such as its space & cleanniness.
